@@ -1,2 +1,12 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+$white: #F7F7F7;
+
+
+header {
+    top: 0;
+    background: $white;
+    height: 100px;
+    width: 100%;
+}
