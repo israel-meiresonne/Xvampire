@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'statique/accueil'
+  root 'statique#accueil'
 
   get 'statique/about'
 
