@@ -1,7 +1,7 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-$white: #F7F7F7;
+$white: red;
 
 
 header {
@@ -9,4 +9,16 @@ header {
     background: $white;
     height: 100px;
     width: 100%;
+    
 }
+.dropdown{
+    margin: 50px;
+    float: right;
+}
+ul {
+
+    height : 60 px;
+    
+    overflow:auto;
+    
+    }

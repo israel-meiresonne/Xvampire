@@ -8,11 +8,13 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <header class="comon-header">
-
-  </header>
+  <%= render "layouts/header.html.erb" %>
 
   <body>
     <%= yield %>
   </body>
+
+  <%= render "layouts/footer.html.erb" %>
+
+
 </html>
