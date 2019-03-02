@@ -2,7 +2,7 @@
   <div class="header-all-border">  
       <div class="header-lang-dropdown">
         <span> 
-            <a href="#"> 
+            <a href="#" class="header-lang-texte-link"> 
               <h2 class="header-lang-texte">
                 FR<span class="glyphicon glyphicon-chevron-down"></span>
               </h2> 
@@ -15,11 +15,10 @@
           <li><a class="header-lang-contain-row" href="#">Español</li>
         </ul>
       </div>
-      <div>
-        <a href="root_accueil">
-          <h1>
-              <%= title() %> 
-          </h1>
+
+      <div class="header-div-title">
+        <a class="header-div-title-texte-link" href="root_path">
+          <h1 class="header-div-title-texte"><%= brand_name() %></h1>
         </a>
       </div>
 </header>

@@ -19,8 +19,14 @@ header{
             top: 34px;
             left: 70px;
             width: 68px;
+            margin-right: 68px;
             /*background: $white;*/
             color: $blue;
+            z-index: 0;
+
+            .header-lang-texte-link:link{
+                text-decoration: none;
+            }
 
             .header-lang-texte{
                 color: $blue;
@@ -49,6 +55,23 @@ header{
         .header-lang-dropdown:hover .header-lang-contain{
             display: block;
         }
+
+        .header-div-title-texte-link{
+            text-decoration: none;
+        }
+        .header-div-title{
+            position: absolute;
+            left: 50%;
+            top: 30px;
+            float: center;
+            height: 100px;
+
+            .header-div-title-texte{
+                color: $blue;
+            }
+            
+            
+        }
     }
 }
 
@@ -56,3 +79,7 @@ header{
     padding: 100px;
     color: $blue;
 }
+
+/*a:link{
+    ;
+}*/

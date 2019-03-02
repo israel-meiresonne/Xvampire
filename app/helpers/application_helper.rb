@@ -1,5 +1,5 @@
 module ApplicationHelper
-    def title
-        @brand_name = "XVAMPIRE"
+    def brand_name
+        @name = "XVAMPIRE"
     end
 end
