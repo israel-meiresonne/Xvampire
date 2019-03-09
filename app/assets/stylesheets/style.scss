@@ -4,82 +4,56 @@
 $white: white;
 $blue: #00174F; 
 $blue_back: rgba(0, 23, 79, 0.9);
+$px_txt_header: 18px;
+$police: 'Arial Black';
 
 
-header{
-    .header-all-border {
-        font-family: 'Arial Black', Helvetica, sans-serif;
-        top: 0px;
-        background: $white;
-        height: 100px;
-        width: 100%;
-        .header-lang-dropdown {
-            position: relative;
-            border: none;
-            top: 34px;
-            left: 70px;
-            width: 68px;
-            margin-right: 68px;
-            /*background: $white;*/
-            color: $blue;
-            z-index: 0;
-
-            .header-lang-texte-link:link{
-                text-decoration: none;
-            }
-
-            .header-lang-texte{
-                color: $blue;
-            }
-            
-            .glyphicon{
-                font-size: 20px;
-                padding-left: 3px;
-            }
-        }
-        .header-lang-contain{
-            top: 33px;
-            display: none;
-            position: absolute;
-            background-color: $blue_back;
-            min-width: 70px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            list-style-type:none;
-            padding: 5px;
-            
-            .header-lang-contain-row{
-                color: $white;
-            }
-        }    
-        .header-lang-dropdown:hover .header-lang-contain{
-            display: block;
-        }
-
-        .header-div-title-texte-link{
-            text-decoration: none;
-        }
-        .header-div-title{
-            position: absolute;
-            left: 50%;
-            top: 30px;
-            float: center;
-            height: 100px;
-
-            .header-div-title-texte{
-                color: $blue;
-            }
-            
-            
-        }
-    }
+.navbar{
+    background: $white;
+    border: none;
+    font-family: $police, sans-serif;
+}
+.navbar-toggle, .navbar-toggle:hover{
+    background: $blue !important;
 }
 
-.texte{
-    padding: 100px;
-    color: $blue;
+.navbar.navbar-inverse .navbar-header .navbar-brand {
+    display: block;
+    text-align:center;
+    float: none;
+    vertical-align: top;
+    width: 150px;
 }
 
-/*a:link{
-    ;
-}*/
+.navbar.navbar-inverse .navbar-header{
+    float: none;
+    position: absolute;
+    left: 45%;
+  }
+
+.dropdown > .custom:focus, .dropdown > .custom:active{
+    background: $white !important;
+}
+
+.form-control, .btn-default, .btn-default:hover{
+    border: none !important;
+    text-align: right;
+    background: $white;
+}
+
+.form-control{
+    width: 80px !important;
+}
+
+.shopping-bag{
+    width: 25px;
+    height: 25px;
+    margin-top: -9px;
+}
+
+
+
+
+h1{
+    color: yellow;
+}
