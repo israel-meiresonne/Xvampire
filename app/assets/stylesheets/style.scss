@@ -8,16 +8,17 @@ $px_txt_header: 18px;
 $police: 'Arial Black';
 
 
-.navbar{
+.main-navbar{
     background: $white;
     border: none;
     font-family: $police, sans-serif;
+    margin-bottom: 0px !important;
 }
-.navbar-toggle, .navbar-toggle:hover{
+.main-navbar-toggle, .main-navbar-toggle:hover{
     background: $blue !important;
 }
 
-.navbar.navbar-inverse .navbar-header .navbar-brand {
+.navbar-inverse .main-navbar-header .main-navbar-brand {
     display: block;
     text-align:center;
     float: none;
@@ -25,7 +26,7 @@ $police: 'Arial Black';
     width: 150px;
 }
 
-.navbar.navbar-inverse .navbar-header{
+.navbar-inverse .main-navbar-header{
     float: none;
     position: absolute;
     left: 45%;
@@ -41,7 +42,7 @@ $police: 'Arial Black';
     background: $white;
 }
 
-.form-control{
+.search-form-control{
     width: 80px !important;
 }
 
@@ -51,9 +52,27 @@ $police: 'Arial Black';
     margin-top: -9px;
 }
 
+/*-------- navbar du choix sexe etc ----*/
+
+.second-navbar{
+    background: $blue_back;
+    border: none;
+    font-family: $police, sans-serif;
+    margin-bottom: 0px !important;
+}
+
+.second-navbar-nav{
+    width: 600px;
+    float: none !important;
+    margin: auto auto!important;
+}
+
+
 
 
 
 h1{
+    position: relative;
+    top:100px;
     color: yellow;
 }

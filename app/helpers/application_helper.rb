@@ -5,8 +5,10 @@ module ApplicationHelper
         @name = "XVAMPIRE"
     end
 
-    def link_color
-        @color = "color: #00174F"
+    def link_color(index)
+        color_array = ["color: #00174F", "color: white"]
+        color = color_array[index]
+        return color
     end
 
 end
