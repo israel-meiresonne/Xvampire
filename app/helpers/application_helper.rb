@@ -2,7 +2,7 @@ module ApplicationHelper
 
     
     def brand_name
-        @name = "XVAMPIRE"
+        @name = "I & M E I M"
     end
 
     def link_color(index)

@@ -7,6 +7,9 @@ $blue_back: rgba(0, 23, 79, 0.9);
 $px_txt_header: 18px;
 $police: 'Arial Black';
 
+body{
+    padding: 0 !important;
+}
 
 .main-navbar{
     background: $white;
@@ -24,6 +27,7 @@ $police: 'Arial Black';
     float: none;
     vertical-align: top;
     width: 150px;
+
 }
 
 .navbar-inverse .main-navbar-header{
@@ -59,20 +63,52 @@ $police: 'Arial Black';
     border: none;
     font-family: $police, sans-serif;
     margin-bottom: 0px !important;
+    border-radius: 0%;
 }
 
 .second-navbar-nav{
-    width: 600px;
+    width: 630px;
     float: none !important;
     margin: auto auto!important;
 }
 
+/*-------- contenue du choix sexe ----*/
 
 
+.categories-container{
+    display: /*none*/ block;
+    width: 100%;
+    max-height: 320px;
+    padding: 20px 40px 40px;
+    margin: 0;
+    position: absolute;
+    background: $blue_back;
+    color: $white;
+}
+
+.categories-container:hover{
+    display: block !important;
+}
+
+.column-title a:link{
+    text-decoration: none;
+}
+.list-title {
+    font-family: $police, sans-serif;
+}
+.categorie-list{
+    list-style-type:none;
+    padding-top:20px;
+    padding-left: 0;
+}
+.categorie-list li a{
+    display: flex;
+    padding: 5px 0px;
+}
 
 
 h1{
     position: relative;
-    top:100px;
+    top:200px;
     color: yellow;
 }
