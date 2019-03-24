@@ -42,6 +42,10 @@ body{
     background: $white !important;
 }
 
+.lang-dropdown{
+}
+
+
 .form-control, .btn-default, .btn-default:hover{
     border: none !important;
     text-align: right;
@@ -79,7 +83,7 @@ body{
 
 
 .categories_women-container{
-    display: /*none*/ block;
+    display: /*block*/ none;
     opacity: 1;
     width: 100%;
     padding: 20px 40px 40px;
