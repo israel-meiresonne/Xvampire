@@ -55,13 +55,13 @@
           <a href="#" style="<%=link_color(1)%>" >Enfants</a>
         </li>
         <li>
-          <a href="#" style="<%=link_color(1)%>" >Accessoires</a>
+          <a href="#" style="<%=link_color(1)%>">Accessoires</a>
         </li>
         <li>
-          <a href="#" style="<%=link_color(1)%>" >Nos Petits Chéris</a>
+          <a href="#" style="<%=link_color(1)%>">Nos Petits Chéris</a>
         </li>
         <li>
-          <a href="#" style="<%=link_color(1)%>" >Sold</a>
+          <a href="#" style="<%=link_color(1)%>">Sold</a>
         </li>
       </ul>
     </div>
@@ -295,19 +295,66 @@
 
 <div class="login-sign_up-div">
   <div class="login-sign_up-container">
-    <div class="login-container">
-      <h4>Déjà membre</h4>
-      <form>
-        
-      </form>
-    </div>
 
     <div class="sign_up-container">
+      <h4>Nouveau membre</h4>
+      <form method="" action="<%= root_path %>" autocomplete="on">
+        <input class="input-user input-two-item" type="text" name="name" placeholder="Votre prénom" required>
+        <input class="input-user input-two-item input-two-item-rigth" type="text" name="lastname" placeholder="Votre nom" required><br><br>
+        <input class="input-user input-one-item" type="text" name="sign_up_email" placeholder="Votre adresse mail" required><br><br>
+        <input class="input-user input-two-item" type="password" name="sign_up_password" placeholder="Votre mot de passe" required>
+        <input class="input-user input-two-item input-two-item-rigth" type="password" name="password_confirm" placeholder="Confirmer" required><br><br>
+        <input class="input-user input-day" type="number" name="day" placeholder="jour" min="1" max="31" maxlength="2">
+        <div class="select-month-container">
+          <select class="select-month" name="month">
+            <option value="1">Janvier</option>
+            <option value="2">Février</option>
+            <option value="3">Mars</option>
+            <option value="4">Avril</option>
+            <option value="5">Mai</option>
+            <option value="6">Juin</option>
+            <option value="7">Juillet</option>
+            <option value="8">Aout</option>
+            <option value="9">Septembre</option>
+            <option value="10">Octobre</option>
+            <option value="11">Nomvembre</option>
+            <option value="12">Décembre</option>
+          </select>
+        </div>
+        <input class="input-user input-year" type="number" name="year" placeholder="Année" maxlength="4"><br><br>
+        <br><input class="checkbox_style input-checkbox-terme" id="sign_up-terme-checkbox" type="checkbox" name="sign_up-terme" required>
+        <label class="terme-label" for="sign_up-terme-checkbox">
+          <span>Je confirme avoir lu et accepté les <a href="" target="_blank">conditions générales</a> de la boutique en ligne, y compris la <a href="" target="_blank">politique de confidentialité</a>.</span>
+        </label><br><br>
+        <br><input class="checkbox_style input-checkbox-newsletter" id="sign_up-Newsletter" type="checkbox" name="sign_up-Newsletter">
+          <label class="newsletter-label" for="sign_up-Newsletter">
+            <span>S’inscrire à la Newsletter</span>
+          </label><br>
+        <div class="Newsletter-details_terme">
+          <span>Newsletter conditions ralonge blablabla</span>
+        </div>
+        <br><br><button class="form-button" type="submit"> M'inscrire</button>
+      </form>
     </div>
+    <div class="login-container">
+        <h4>Déjà membre</h4>
+        <form method="" action="<%= root_path %>" autocomplete="on">
+          <input class="input-user input-one-item" type="text" name="login_email" placeholder="Saisissez votre adresse mail" required><br><br>
+          <input class="input-user input-one-item" type="password" name="login_password" placeholder="Saisissez un mot de passe" required><br><br>
+          <div class="remember-forgot-container">
+            <button class="forgot-button" type="button">Mot de passe oublié?</button>
+            <div class="input-remember-checkbox-container">
+              <input class="checkbox_style input-remember-checkbox" id="login-remember-checkbox" type="checkbox" name="login-remember" required>
+              <label for="input-remember-message">
+              <span>Se souvenir de moi</span>
+              </label>
+            </div>
+          </div>
+          <br><button class="form-button" type="submit">Me Connecter</button>
+        </form>
+    </div>
+
   </div>
 </div>
-
-
-
 </header>
 

@@ -4,6 +4,7 @@
 $white: white;
 $blue: #00174F; 
 $blue_back: rgba(0, 23, 79, 0.9);
+$button_color: #1A5BFF;
 $px_txt_header: 18px;
 $police: 'Arial Black';
 
@@ -155,6 +156,7 @@ body{
 }
 
 /*-------- div se connecter ----*/
+/*1.-- div sign_up --*/
 .login-sign_up-div{
     display: none;
     position: fixed;
@@ -163,15 +165,171 @@ body{
     background: $blue_back;
     color: $white;
 }
+.login-sign_up-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0 30px 0;
+}
+
+.sign_up-container, .login-container{
+    max-width: 500px;
+    width: 50%;
+    position: relative;
+    padding: 0 15px 0 15px;
+}
+.sign_up-container{
+    border-right-style: solid;
+    
+}
+
+.input-user{
+    color: black;
+    height: 35px;
+    background-color: $white;
+}
+.input-one-item{
+    width: 98%;
+}
+.input-two-item{
+    position: relative;
+    width: 48%;
+}
+.input-two-item-rigth{
+    margin-left: 5px;
+}
+
+.input-day{
+    position: relative;
+    float: left;
+    width: 32%;
+}
+.select-month-container::after{
+    content: '';
+	position: absolute;
+	top: 50%; 
+	margin-top: -3px;
+	right: .75em;  
+	display: block; 
+    width: 0; 
+    height: 0;
+	border-color: transparent;
+	border-top-color: #444; 
+	border-width: 6px;
+	border-style: solid;
+	pointer-events: none;
+}
+.select-month-container{
+    position: relative;
+    float: left;
+    margin: 0 8px 0 8px;
+	background-color: #fff;
+	border: #777 1px solid;
+    overflow: hidden;
+    width: 32%;
+    height: 35px;
+    .select-month{
+        border:none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        -ms-appearance: none;
+        border: 0; 
+        margin: 0;
+        border-radius: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        color: gray;
+        background-color: #fff;
+        height: 35px;
+        width: 100%;
+         
+    }
+}
+.input-year{
+    position: relative;
+    float: left;
+    width: 30%;
+}
+
+.input-checkbox-terme, .terme-label{
+    position: relative;
+    float: left;
+}
+.terme-label{
+    width: 410px;
+    margin-left: 8px;
+}
+
+.input-checkbox-newsletter{
+    position: relative;
+    float: left;
+    width: 50%;
+    left: -2px;
+}
+.newsletter-label{
+    position: relative;
+    float: left;
+    width: 167px;
+    left: -46%;
+}
+.Newsletter-details_terme{
+    display: none;
+    width: 248px;
+    margin-left: 4%;
+}
+
+.form-button{
+    border-color: #4d7fff;
+    font: inherit;
+    color: inherit;
+    background-color: $button_color;
+    cursor: pointer;
+    font-family: $police, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+/*2.-- div login --*/
+.remember-forgot-container{
+    .forgot-button{
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        float: right;
+        width: 150px;
+        text-decoration-line: underline;
+        -webkit-text-decoration-line: underline;   
+    }
+    .input-remember-checkbox-container{
+        width: 50%;
+        .input-remember-checkbox{
+            position: relative;
+            float: left;
+        }
+        label{
+            margin-left: 8px;
+        }
+        label span{
+            width: 129px;
+        }
+    }
+    
+}
 
 
 
 
-
-
-
-h1{
+.texte{
     position: relative;
     top: 700px;
-    color: yellow;
+    color: red;
 }

@@ -22,3 +22,10 @@ $(document).ready ->
             $('.login-sign_up-div').slideUp(400, -> $('.second-navbar').slideDown(400))
         
     
+#afficher details condition Newletter
+    $('#sign_up-Newsletter').click ->
+        if $('.Newsletter-details_terme').css("display") == "none"
+            $('.Newsletter-details_terme').slideDown(400)
+        else
+            $('.Newsletter-details_terme').slideUp(400)
+        
