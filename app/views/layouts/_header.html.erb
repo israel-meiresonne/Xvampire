@@ -12,7 +12,7 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav ">
           <li><a href="<%= root_path %>" style="<%=link_color(0)%>">ACCUEIL</a></li>
-          <li><a href="<%= about_path %>" style="<%=link_color(0)%>">A PROPOS</a></li>
+          <li><a href="" style="<%=link_color(0)%>">A PROPOS</a></li>
           <li class="dropdown">
             <a class="dropdown-toggle custom" data-toggle="dropdown" href="#" style="<%=link_color(0)%>">FR
             <span class="caret"></span></a>
@@ -25,7 +25,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <form class="navbar-form" action="<%= about_path %>">
+            <form class="navbar-form" action="">
               <div class="input-group">
                 <input type="text" class="form-control search-form-control" placeholder="___________">
                 <div class="input-group-btn">
@@ -46,13 +46,13 @@
     <div class="container-fluid">
       <ul class="nav navbar-nav second-navbar-nav">
         <li id="femme">
-          <a href="#" style="<%=link_color(1)%>">Femmes</a>
+          <a href="<%= women_path %>" style="<%=link_color(1)%>">Femmes</a>
         </li>
         <li>
-          <a href="#" style="<%=link_color(1)%>" >Hommes</a>
+          <a href="<%= men_path %>" style="<%=link_color(1)%>" >Hommes</a>
         </li>
         <li>
-          <a href="#" style="<%=link_color(1)%>" >Enfants</a>
+          <a href="<%= kids_path %>" style="<%=link_color(1)%>" >Enfants</a>
         </li>
         <li>
           <a href="#" style="<%=link_color(1)%>">Accessoires</a>

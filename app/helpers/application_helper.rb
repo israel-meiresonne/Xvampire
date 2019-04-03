@@ -1,6 +1,4 @@
 module ApplicationHelper
-
-    
     def brand_name
         @name = "I & M E I M"
     end
