@@ -2,7 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$(document).ready ->
+$(document).ready( ->
 
 #faire descendre les catégorie
     $('#femme').mouseenter ->
@@ -28,4 +28,5 @@ $(document).ready ->
             $('.Newsletter-details_terme').slideDown(400)
         else
             $('.Newsletter-details_terme').slideUp(400)
+)
         
